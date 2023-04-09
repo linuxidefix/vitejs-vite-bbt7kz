@@ -2,6 +2,7 @@
   <div>
     <h2>{{ category.label }}</h2>
     <p>Category ID: {{ category.key }}</p>
+    <p>Children: {{ category.children }}</p>
   </div>
 </template>
 

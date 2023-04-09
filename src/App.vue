@@ -16,23 +16,30 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import Tree from 'primevue/tree';
+import { TreeNode } from 'primevue/api';
+
 import { getCategoryTree } from './services/categoryService';
 import CategoryDetails from './components/CategoryDetails.vue';
+import Category from './models/Category';
 
-const categories = ref(null);
-const selectedCategory = ref(null);
+const categories = ref<TreeNode[]>(null);
+const selectedCategory = ref<Category | null>(null);
 
 onMounted(async () => {
   categories.value = await getCategoryTree();
 });
 
-const onNodeSelect = (event) => {
-  if (event.label && event.key) {
-    selectedCategory.value = { label: event.label, key: event.key };
-  }
+const convertNodeToCategory = (node: TreeNode): Category => {
+  return { key: node.key, label: node.label, children: node.children };
+};
+
+const onNodeSelect = (node: TreeNode) => {
+  console.log({ node });
+  selectedCategory.value = convertNodeToCategory(node);
+  console.log(selectedCategory.value);
 };
 </script>
 
