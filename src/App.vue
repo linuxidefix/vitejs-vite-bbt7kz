@@ -10,7 +10,7 @@
       ></Tree>
     </div>
     <div class="main-content">
-      <h2 v-if="selectedCategory">{{ selectedCategory }}</h2>
+      <CategoryDetails :category="selectedCategory" v-if="selectedCategory" />
       <p v-else>No category selected</p>
     </div>
   </div>
@@ -20,6 +20,7 @@
 import { ref, onMounted } from 'vue';
 import Tree from 'primevue/tree';
 import { getCategoryTree } from './services/categoryService';
+import CategoryDetails from './components/CategoryDetails.vue';
 
 const categories = ref(null);
 const selectedCategory = ref(null);
@@ -29,8 +30,8 @@ onMounted(async () => {
 });
 
 const onNodeSelect = (event) => {
-  if (event.label) {
-    selectedCategory.value = event.label;
+  if (event.label && event.key) {
+    selectedCategory.value = { label: event.label, key: event.key };
   }
 };
 </script>
