@@ -1,5 +1,7 @@
 export interface Category {
-  key: number;
+  key: string;
   label: string;
+  labels: Map<string, string>;
+  modelId: string;
   children?: Category[];
 }

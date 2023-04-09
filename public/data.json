@@ -1,0 +1,236 @@
+[
+  {
+    "key": "power-tools",
+    "labels": {
+      "en": "Power Tools",
+      "fr": "Outils Électriques",
+      "es": "Herramientas Eléctricas",
+      "de": "Elektrowerkzeuge"
+    },
+    "modelId": "PT",
+    "children": [
+      {
+        "key": "drills",
+        "labels": {
+          "en": "Drills",
+          "fr": "Perceuses",
+          "es": "Taladros",
+          "de": "Bohrmaschinen"
+        },
+        "modelId": "DR",
+        "children": [
+          {
+            "key": "corded-drills",
+            "labels": {
+              "en": "Corded Drills",
+              "fr": "Perceuses Filaire",
+              "es": "Taladros con Cable",
+              "de": "Kabelgebundene Bohrmaschinen"
+            },
+            "modelId": "CDR",
+            "children": [
+              {
+                "key": "corded-drills-1",
+                "labels": {
+                  "en": "Corded Drill Model 1",
+                  "fr": "Perceuse Filaire Modèle 1",
+                  "es": "Taladro con Cable Modelo 1",
+                  "de": "Kabelgebundene Bohrmaschine Modell 1"
+                },
+                "modelId": "CDR-1"
+              },
+              {
+                "key": "corded-drills-2",
+                "labels": {
+                  "en": "Corded Drill Model 2",
+                  "fr": "Perceuse Filaire Modèle 2",
+                  "es": "Taladro con Cable Modelo 2",
+                  "de": "Kabelgebundene Bohrmaschine Modell 2"
+                },
+                "modelId": "CDR-2"
+              },
+              {
+                "key": "corded-drills-3",
+                "labels": {
+                  "en": "Corded Drill Model 3",
+                  "fr": "Perceuse Filaire Modèle 3",
+                  "es": "Taladro con Cable Modelo 3",
+                  "de": "Kabelgebundene Bohrmaschine Modell 3"
+                },
+                "modelId": "CDR-3"
+              },
+              {
+                "key": "corded-drills-4",
+                "labels": {
+                  "en": "Corded Drill Model 4",
+                  "fr": "Perceuse Filaire Modèle 4",
+                  "es": "Taladro con Cable Modelo 4",
+                  "de": "Kabelgebundene Bohrmaschine Modell 4"
+                },
+                "modelId": "CDR-4"
+              },
+              {
+                "key": "corded-drills-5",
+                "labels": {
+                  "en": "Corded Drill Model 5",
+                  "fr": "Perceuse Filaire Modèle 5",
+                  "es": "Taladro con Cable Modelo 5",
+                  "de": "Kabelgebundene Bohrmaschine Modell 5"
+                },
+                "modelId": "CDR-5"
+              }
+            ]
+          },
+          {
+            "key": "cordless-drills",
+            "labels": {
+              "en": "Cordless Drills",
+              "fr": "Perceuses Sans Fil",
+              "es": "Taladros Inalámbricos",
+              "de": "Akku-Bohrmaschinen"
+            },
+            "modelId": "CDSL"
+          },
+          {
+            "key": "impact-drills",
+            "labels": {
+              "en": "Impact Drills",
+              "fr": "Perceuses à Percussion",
+              "es": "Taladros de Impacto",
+              "de": "Schlagbohrmaschinen"
+            },
+            "modelId": "ID"
+          }
+        ]
+      },
+      {
+        "key": "saws",
+        "labels": {
+          "en": "Saws",
+          "fr": "Scies",
+          "es": "Sierras",
+          "de": "Sägen"
+        },
+        "modelId": "SAW",
+        "children": [
+          {
+            "key": "circular-saws",
+            "labels": {
+              "en": "Circular Saws",
+              "fr": "Scies Circulaires",
+              "es": "Sierras Circulares",
+              "de": "Kreissägen"
+            },
+            "modelId": "CIRCS"
+          },
+          {
+            "key": "jig-saws",
+            "labels": {
+              "en": "Jig Saws",
+              "fr": "Scies Sauteuses",
+              "es": "Sierras de Calar",
+              "de": "Stichsägen"
+            },
+            "modelId": "JGS"
+          },
+          {
+            "key": "miter-saws",
+            "labels": {
+              "en": "Miter Saws",
+              "fr": "Scies à Onglets",
+              "es": "Sierras de Inglete",
+              "de": "Kapp- und Gehrungssägen"
+            },
+            "modelId": "MS"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "tools-diy",
+    "labels": {
+      "en": "Tools & DIY",
+      "fr": "Outils & Bricolage",
+      "es": "Herramientas y Bricolaje",
+      "de": "Werkzeug & DIY",
+      "it": "Fai da te e Attrezzi"
+    },
+    "modelId": "cat-t-diy",
+    "children": [
+      {
+        "key": "hand-tools",
+        "labels": {
+          "en": "Hand Tools",
+          "fr": "Outillage à main",
+          "es": "Herramientas de mano",
+          "de": "Handwerkzeuge",
+          "it": "Attrezzi manuali"
+        },
+        "modelId": "cat-t-diy-hand",
+        "children": [
+          {
+            "key": "screwdrivers",
+            "labels": {
+              "en": "Screwdrivers",
+              "fr": "Tournevis",
+              "es": "Destornilladores",
+              "de": "Schraubendreher",
+              "it": "Cacciaviti"
+            },
+            "modelId": "cat-t-diy-hand-screw",
+            "children": []
+          },
+          {
+            "key": "pliers",
+            "labels": {
+              "en": "Pliers",
+              "fr": "Pinces",
+              "es": "Alicates",
+              "de": "Zangen",
+              "it": "Pinze"
+            },
+            "modelId": "cat-t-diy-hand-pliers",
+            "children": []
+          },
+          {
+            "key": "hammers",
+            "labels": {
+              "en": "Hammers",
+              "fr": "Marteaux",
+              "es": "Martillos",
+              "de": "Hämmer",
+              "it": "Martelli"
+            },
+            "modelId": "cat-t-diy-hand-hammers",
+            "children": []
+          },
+          {
+            "key": "saws",
+            "labels": {
+              "en": "Saws",
+              "fr": "Scies",
+              "es": "Sierras",
+              "de": "Sägen",
+              "it": "Seghe"
+            },
+            "modelId": "cat-t-diy-hand-saws",
+            "children": []
+          },
+          {
+            "key": "wrenches",
+            "labels": {
+              "en": "Wrenches",
+              "fr": "Clés",
+              "es": "Llaves",
+              "de": "Schlüssel",
+              "it": "Chiavi"
+            },
+            "modelId": "cat-t-diy-hand-wrenches",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
