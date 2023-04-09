@@ -5,6 +5,7 @@
         :value="categories"
         selectionMode="single"
         :metaKeySelection="false"
+        :filter="true"
         @nodeSelect="onNodeSelect"
         class="w-full"
       ></Tree>
