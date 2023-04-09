@@ -10,7 +10,7 @@
       ></Tree>
     </div>
     <div class="main-content">
-      <h2 v-if="selectedCategory">{{ selectedCategory.label }}</h2>
+      <h2 v-if="selectedCategory">{{ selectedCategory }}</h2>
       <p v-else>No category selected</p>
     </div>
   </div>
@@ -29,8 +29,8 @@ onMounted(async () => {
 });
 
 const onNodeSelect = (event) => {
-  if (event.node) {
-    selectedCategory.value = event.node;
+  if (event.label) {
+    selectedCategory.value = event.label;
   }
 };
 </script>
