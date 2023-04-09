@@ -5,12 +5,13 @@
   </div>
 </template>
 
-<script setup>
-import { defineProps } from 'vue';
+<script setup lang="ts">
+import { defineProps, PropType } from 'vue';
+import { Category } from '@/models/Category';
 
 const props = defineProps({
   category: {
-    type: Object,
+    type: Object as PropType<Category>,
     required: true,
   },
 });
